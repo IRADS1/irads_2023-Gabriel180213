@@ -25,8 +25,16 @@ SECRET_KEY = 'django-insecure-5_6rdno7jl+u0i^a*^tp9o1da^8jd8)%l*2mr9&s921jatrd&_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['irads2023-gabriel180213-production.up.railway.app', 'https://irads2023-gabriel180213-production.up.railway.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['irads2023-gabriel180213-production.up.railway.app', 'localhost', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://irads2023-gabriel180213-production.up.railway.app',
+    'http://irads2023-gabriel180213-production.up.railway.app',
+    'https://localhost',
+    'http://localhost',
+    'https://127.0.0.1',
+    'http://127.0.0.1'
+]
 
 # Application definition
 
